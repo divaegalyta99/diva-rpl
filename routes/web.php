@@ -32,7 +32,7 @@ Route::get('/', [LoginController::class,'index']);
 
 
 
-Route ::get('admin/dashboard',[DashboardController::class,'index']);
+Route ::get('/dashboard',[DashboardController::class,'index']);
 Route ::get('/login',[LoginController::class,'index'])->name('login.auth')->middleware('guest');
 Route ::post('/login',[LoginController::class, 'authenticate'])->name('login');
 Route ::post('/logout',[LoginController::class,'index'])->name('logout')->middleware('auth');
