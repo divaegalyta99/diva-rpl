@@ -24,9 +24,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [LoginController::class,'index']);
 
-// Route::get('/admin', function () {
-//     return view('admin.dashboard');
-// });
+Route::get('/admin', function () {
+    return view('admin.dashboard');
+});
 
 // admin
 
@@ -37,10 +37,10 @@ Route ::get('/login',[LoginController::class,'index'])->name('login.auth')->midd
 Route ::post('/login',[LoginController::class, 'authenticate'])->name('login');
 Route ::post('/logout',[LoginController::class,'index'])->name('logout')->middleware('auth');
 Route ::get('admin/MasterSiswa/{id_siswa}/hapus',[MasterSiswaController::class,'hapus'])->name('MasterSiswa.hapus');
-Route::resource('admin/MasterSiswa',MasterSiswaController::class);
-Route::resource('/admin/MasterProject',MasterProjectController::class);
+Route::resource('/MasterSiswa',MasterSiswaController::class);
+Route::resource('/MasterProject',MasterProjectController::class);
 Route ::get('admin/MasterProject/{id_project}/hapus',[MasterProjectController::class,'hapus'])->name('MasterProject.hapus');
-Route::resource('admin/MasterContact',MasterKontakController::class);
+Route::resource('/MasterContact',MasterKontakController::class);
 Route::get('/logout',[LoginController::class,'index'])->middleware('auth');
 
 // Route::get('/mastersiswa', function () {

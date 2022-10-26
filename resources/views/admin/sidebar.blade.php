@@ -2,7 +2,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
 <!-- Sidebar - Brand -->
-<a class="sidebar-brand d-flex align-items-center justify-content-center" href="/admin/dashboard">
+<a class="sidebar-brand d-flex align-items-center justify-content-center" href="/dashboard">
     <div class="sidebar-brand-icon rotate-n-15">
         <i class="fas fa-laugh-wink"></i>
     </div>
@@ -14,25 +14,25 @@
 
 <!-- Nav Item - Dashboard -->
 <li class="nav-item">
-    <a class="nav-link" href="/admin/dashboard">
+    <a class="nav-link" href="/dashboard">
         <i class="fas fa-fw fa-tachometer-alt"></i>
         <span>Dashboard</span></a>
 </li>
 
 <li class="nav-item">
-    <a class= "nav-link" href="/admin/MasterSiswa">
+    <a class= "nav-link" href="/MasterSiswa">
     <i class="fas fa-fw fa-user"></i>
     <span>Master Siswa</span></a>
 </li>
 
 <li class="nav-item">
-    <a class= "nav-link" href="/admin/MasterProject">
+    <a class= "nav-link" href="/MasterProject">
     <i class="fas fa-file-alt"></i>
     <span>Master Project</span></a>
 </li>
 
 <li class="nav-item">
-    <a class= "nav-link" href="/admin/MasterContact">
+    <a class= "nav-link" href="/MasterContact">
     <i class="fas fa-phone"></i>
     <span>Master Kontak</span></a>
 </li>
