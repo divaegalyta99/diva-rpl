@@ -19,7 +19,7 @@ class MasterProjectController extends Controller
     {
         $data=Siswa::all('id','nama');
         //return data
-        return view('admin.MasterProject');
+        return view('admin.MasterProject',compact('data'));
     }
 
     /**
