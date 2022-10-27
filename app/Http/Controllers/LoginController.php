@@ -13,7 +13,7 @@ class LoginController extends Controller
     //     return redirect ('login');
     // }
     public function index(){
-        return view ('admin.login');
+        return view ('admin.Login');
     }
 
  
