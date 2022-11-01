@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Siswa;
+
 class MasterSiswaController extends Controller
 {
     /**
@@ -41,7 +42,23 @@ class MasterSiswaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $file = $request->file('foto');
+        $nama_file = time()."_".$file->getClientOriginalName();
+
+        $tujuan_upload = './template/cobak';;
+        $file->move($tujuan_upload,$nama_file);
+
+
+        Siswa::create ([
+            'nama'=>$request->nama,
+            'jk'=>$request->jk,
+            'alamat'=>$request->alamat,
+            'email'=>$request->email,
+            'about'=>$request->about,
+            'foto'=>$nama_file
+        ]);
+
+        return redirect ('/MasterSiswa');
     }
 
     /**
@@ -53,9 +70,10 @@ class MasterSiswaController extends Controller
     public function show($id)
     {
         $data = Siswa::find($id);
-        //$kontak = $data->kontak()->get();
+        $Kontak = $data->Kontak();
+        $project = $data->project();
         //return ($kontak);
-        return view('admin.ShowSiswa',compact('data'));
+        return view('admin.ShowSiswa',compact('data','Kontak','project'));
     }
 
     /**

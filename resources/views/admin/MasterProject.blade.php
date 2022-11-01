@@ -46,7 +46,7 @@
 </div>
 <script>
     function show(id){
-        $.get('/MasterProject'+id,function(data){
+        $.get('/project'+id,function(data){
             $('#project').html(data)
             // console.log(data)
         })

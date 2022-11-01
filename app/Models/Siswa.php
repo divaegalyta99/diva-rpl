@@ -4,6 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Kontak;
+use App\Models\Project;
 
 class Siswa extends Model
 {
@@ -18,9 +20,9 @@ class Siswa extends Model
     ];
     protected $table = 'siswa';
     public function kontak (){
-        return $this->belongsTo('app\models\Kontak','id_siswa');
+        return $this->hasmany(Kontak::class,'id_siswa','id');
     }
     public function project (){
-        return $this->hasMany('app\models\JProject','id_siswa');
+        return $this->hasmany('App\Models\project','id_siswa');
     }
 }

@@ -18,7 +18,7 @@ class MasterProjectController extends Controller
     public function index()
     {
         $data=Siswa::all('id','nama');
-        //return data
+      
         return view('admin.MasterProject',compact('data'));
     }
 
@@ -29,7 +29,7 @@ class MasterProjectController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.TambahProject');
     }
 
     /**

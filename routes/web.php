@@ -38,7 +38,7 @@ Route ::post('/login',[LoginController::class, 'authenticate'])->name('login');
 Route ::post('/logout',[LoginController::class,'index'])->name('logout')->middleware('auth');
 Route ::get('admin/MasterSiswa/{id_siswa}/hapus',[MasterSiswaController::class,'hapus'])->name('MasterSiswa.hapus');
 Route::resource('/MasterSiswa',MasterSiswaController::class);
-Route::resource('/MasterProject',MasterProjectController::class);
+Route::resource('/Project',MasterProjectController::class);
 Route ::get('admin/MasterProject/{id_project}/hapus',[MasterProjectController::class,'hapus'])->name('MasterProject.hapus');
 Route::resource('/MasterContact',MasterKontakController::class);
 Route::get('/logout',[LoginController::class,'index'])->middleware('auth');
@@ -47,7 +47,7 @@ Route::get('/logout',[LoginController::class,'index'])->middleware('auth');
 //     return view('admin.MasterSiswa');
 // });
 
-// Route::get('/masterproject', function () {
+// Route::resource('/masterproject', function () {
 //     return view('admin.MasterProject');
 // });
 

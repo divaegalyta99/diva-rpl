@@ -1,7 +1,7 @@
-@if($data->isEmpty())
+@if($projek->isEmpty())
 <h6 class="text-center">Siswa Belum Memiliki Project</h6>
 @else
-@foreach($data as $item) 
+@foreach($projek as $item) 
 <ol class="list-group list-group-numbered">
   <li class="list-group-item d-flex justify-content-between align-items-start">
     <div class="ms-2 me-auto">

@@ -25,7 +25,7 @@
             <tr>
                 <th scope="row">{{ ++$i }}</th>
                 <td>{{ $item ->nama }}</td>
-                <td>{{ $item ->jenis_kelamin }}</td>
+                <td>{{ $item ->jk }}</td>
                 <td>{{ $item ->email }}</td>
                 <td>
                 <a href="{{ route ('MasterSiswa.show', $item->id)}}" class="btn btn-info btn-circle"><i class="fas fa-info-circle"></i></a>

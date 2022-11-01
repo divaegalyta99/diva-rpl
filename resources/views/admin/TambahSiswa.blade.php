@@ -22,11 +22,11 @@
                         <input type="text" class="form-control" id="nama" name="nama" value="{{old('nama')}}">
                     </div>
                     <div class="form-group">
-                        <label for="jenis_kelamin">Jenis Kelamin</label>
-                        <select class="form-select form-control" id="jenis_kelamin" name="jenis_kelamin">
+                        <label for="jk">Jenis Kelamin</label>
+                        <select class="form-select form-control" id="jk" name="jk">
                             <option selected></option>
-                            <option @if(old('jenis_kelamin')=="perempuan" )) selected @endif value="perempuan">Perempuan</option>
-                            <option @if(old('jenis_kelamin')=="Laki-laki" )) selected @endif value="Laki-laki">Laki-Laki</option>
+                            <option @if(old('jk')=="perempuan" )) selected @endif value="perempuan">Perempuan</option>
+                            <option @if(old('jk')=="Laki-laki" )) selected @endif value="Laki-laki">Laki-Laki</option>
                         </select>
                     </div>
                     <div class="form-group">

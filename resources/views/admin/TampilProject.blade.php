@@ -2,3 +2,5 @@
 @section('content-title', 'Tampil Project')
 @section('title','Tampil Project')
 @section('content')
+
+@endsection

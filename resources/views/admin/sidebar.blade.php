@@ -26,7 +26,7 @@
 </li>
 
 <li class="nav-item">
-    <a class= "nav-link" href="/MasterProject">
+    <a class= "nav-link" href="/Project">
     <i class="fas fa-file-alt"></i>
     <span>Master Project</span></a>
 </li>

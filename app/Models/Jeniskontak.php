@@ -4,16 +4,16 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-
+use App\Models\Kontak;
 class Jeniskontak extends Model
 {
     use HasFactory;
     protected $fillable =[
-        'id',
+
         'jenis_kontak'
     ];
-    protected$table ='jeniskontak';
+    protected $table ='jenis_kontak';
     public function kontak(){
-        return $this->belongsToMany('app\models\Jeniskontak','id_jenis');
+        return $this->hasmany(Kontak::class,'id_jenis', 'id');
     }
 }
