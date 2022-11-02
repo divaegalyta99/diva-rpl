@@ -7,7 +7,7 @@
         <div class="card shadow mb-4">
             <div class="card-body text-center">
               
-                <img src="{{asset('/template/cobak/'.$data->foto)}}" width="200" class="rounded-circle">
+                <img src="{{asset('template/cobak/'.$data->foto)}}" width="200" class="rounded-circle">
                 <h5>{{ $data->nama }}</h5>
                 <h6>{{ $data->email }}</h6>
                 <h6>{{ $data->alamat }}</h6>
