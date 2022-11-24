@@ -1,6 +1,6 @@
 @extends('admin.app')
-@section('tittle,'Master Kontak')
-@section('content-tittle','Master Kontak')
+@section('title,'Master Kontak')
+@section('content-title','Master Kontak')
 
 @section('content')
 @endsection
