@@ -14,7 +14,7 @@
 
 <!-- Nav Item - Dashboard -->
 <li class="nav-item">
-    <a class="nav-link" href="/admin">
+    <a class="nav-link" href="/dashboard">
         <i class="fas fa-fw fa-tachometer-alt"></i>
         <span>Dashboard</span></a>
 </li>
@@ -26,7 +26,7 @@
 </li>
 
 <li class="nav-item">
-    <a class= "nav-link" href="/Project">
+    <a class= "nav-link" href="/MasterProject">
     <i class="fas fa-file-alt"></i>
     <span>Master Project</span></a>
 </li>

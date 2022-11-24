@@ -15,10 +15,12 @@ class MasterProjectController extends Controller
     {
         $this->middleware('auth');
     }
+ 
+  
     public function index()
     {
-        $data=Siswa::all('id','nama');
-      
+        $data = Siswa::all('id','nama');
+
         return view('admin.MasterProject',compact('data'));
     }
 
@@ -51,8 +53,9 @@ class MasterProjectController extends Controller
      */
     public function show($id)
     {
-        $data= Siswa::find($id)->project()->get();
-        return($data);
+        $data = Siswa::find($id)->project()->get();
+        // return($data);
+        $project = $data->project();
         return view('admin.TampilProject',compact('data'));
     }
 
