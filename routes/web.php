@@ -4,7 +4,7 @@ use App\Models\Post;
 
 use App\Http\Controllers\MasterSiswaController;
 use App\Http\Controllers\MasterProjectController;
-use App\Http\Controllers\MasterContactController;
+use App\Http\Controllers\MasterKontakController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
@@ -40,7 +40,8 @@ Route ::get('admin/MasterSiswa/{id_siswa}/hapus',[MasterSiswaController::class,'
 Route::resource('/MasterSiswa',MasterSiswaController::class);
 Route::resource('/MasterProject',MasterProjectController::class);
 Route ::get('admin/MasterProject/{id_project}/hapus',[MasterProjectController::class,'hapus'])->name('MasterProject.hapus');
-Route::resource('/MasterContact',MasterContactController::class);
+
+Route::resource('/MasterKontak',MasterKontakController::class);
 Route::get('/logout',[LoginController::class,'index'])->middleware('auth');
 
 // Route::get('/mastersiswa', function () {

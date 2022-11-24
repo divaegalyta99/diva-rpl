@@ -3,14 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Kontak;
-class MasterContactController extends Controller
+use App\Models\Siswa;
+class MasterKontakController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+
     public function __construct()
     {
         $this->middleware('auth');
@@ -19,6 +20,7 @@ class MasterContactController extends Controller
     {
         return view('admin.MasterKontak');
     }
+   
 
     /**
      * Show the form for creating a new resource.

@@ -32,7 +32,7 @@
 </li>
 
 <li class="nav-item">
-    <a class= "nav-link" href="/MasterContact">
+    <a class= "nav-link" href="/MasterKontak">
     <i class="fas fa-phone"></i>
     <span>Master Kontak</span></a>
 </li>
