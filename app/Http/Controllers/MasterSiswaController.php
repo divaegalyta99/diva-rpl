@@ -45,7 +45,7 @@ class MasterSiswaController extends Controller
         $file = $request->file('foto');
         $nama_file = time()."_".$file->getClientOriginalName();
 
-        $tujuan_upload = './template/cobak';;
+        $tujuan_upload = './template/img';;
         $file->move($tujuan_upload,$nama_file);
 
 
